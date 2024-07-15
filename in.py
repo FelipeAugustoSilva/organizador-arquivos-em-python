@@ -22,6 +22,6 @@ for file_type in types:
 
 for file in files_list:
     from_path = os.path.join(cwd, file)
-    to_path = os.path.join(cd, file.split('.')[-1], file)
+    to_path = os.path.join(cwd, file.split('.')[-1], file)
 
     os.replace(from_path, to_path)
